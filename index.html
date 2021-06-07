@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>小程序文档</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      
+      name: '',
+      repo: '',
+      // 添加logo
+      logo:'https://open.unionpay.com/tjweb/resources/images/new/nav/logo_on.png?v=20210219190833',
+      // 加载自定义导航栏，
+      loadNavbar: true,
+      loadNavbar: 'navbar.md',
+      // 加载侧边栏
+      loadSidebar: true,
+      subMaxLevel: 2,
+      // 切换页面后是否自动跳转到页面顶部。
+      auto2top: true,
+      // 添加搜索框
+      search: {
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: ['auto'], // or 'auto'
+        placeholder: '搜索',
+        noData: '找不到结果',
+        // 搜索标题的最大程级, 1 - 6
+        depth: 2,
+
+        hideOtherSidebarContent: false,//
+      },
+      // 剪切板
+      copyCode: {
+        buttonText : '复制',
+        errorText  : '错误',
+        successText: '已复制'
+      },
+      // 文档加载的根路径，可以是二级路径或者是其他域名的路径。
+      // basePath: 'docs/01介绍/0101云闪付小程序'
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script> -->
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
+  <script src="//unpkg.com/docsify-copy-code"></script>
+  <!-- 图片缩放 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <!-- 复制代码 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+</body>
+</html>
